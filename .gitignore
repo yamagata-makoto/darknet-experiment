@@ -1,0 +1,7 @@
+*.weight
+*.weights
+obj
+*.o
+darknet
+*.a
+*.so
