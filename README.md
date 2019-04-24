@@ -1,28 +1,17 @@
-# openpose-darknet
-Openpose implementation using darknet framework
+![Darknet Logo](http://pjreddie.com/media/files/darknet-black-small.png)
 
-<b>[Openpose]</b><p>
-https://github.com/CMU-Perceptual-Computing-Lab/openpose
+# Darknet #
+Darknet is an open source neural network framework written in C and CUDA. It is fast, easy to install, and supports CPU and GPU computation.
 
-<b>[Darknet]</b><p>
-https://github.com/pjreddie/darknet
+For more information see the [Darknet project website](http://pjreddie.com/darknet).
 
-<b>[Result]</b><p>
-![demo](https://user-images.githubusercontent.com/16308037/34094455-333f678c-e408-11e7-9546-f8aeb3df39c2.jpg)
+For questions or issues please use the [Google Group](https://groups.google.com/forum/#!forum/darknet).
 
-<b>[Benchmark]</b><p> 51.634ms for 200x200x3 net input size running on GTX 1060, which is 3x faster than original caffe implementation
+# openpose-darknet #
+https://github.com/lincolnhard/openpose-darknet
+./darknet pose demo movie.mp4 cfg/openpose.cfg weightfile.weights
 
-<b>[Weight file] (darknet version openpose.weight)</b><p>
-https://drive.google.com/open?id=1BfY0Hx2d2nm3I4JFh0W1cK2aHD1FSGea
-  
-<b>[Usage]</b><p>
-```Bash
-./openpose-darknet [image file] [cfg file] [weight file]
-#example
-./openpose-darknet person.jpg openpose.cfg openpose.weight
-```
+# azface #
+https://github.com/azmathmoosa/azFace
+./darknet detector demo data/azface.data cfg/tiny-yolo-azface-fddb.cfg weightfile.weights
 
-<b>[note]</b><p>
-1. Darknet version openpose.cfg and openpose.weight are ported from COCO version 
-  pose_deploy_linevec.prototxt and pose_iter_440000.caffemodel.
-2. You could change net input width, height in openpose.cfg.
